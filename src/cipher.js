@@ -1,9 +1,19 @@
 window.cipher = {
-  encode: () => {
-    /* Acá va tu código */
-    
+  encode: (text, number) => {
+    let mssgeFinal=""
+for(let i=0; i<text.length; i++){
+let codeAscii= text.charCodeAt(i);
+let result1=(codeAscii - 65 + number)%26 + 65;
+mssgeFinal += String.fromCharCode(result1);
+} return mssgeFinal
   },
-  decode: () => {
-    /* Acá va tu código */
-  }
+
+  decode: (text, number) => {
+let mssgeFinal=""
+for(let i=0; i<text.length; i++){
+  let codeAscii=text.charCodeAt(i);
+  let result2=(codeAscii + 65 - number)%26 + 65;
+  mssgeFinal +=String.fromCharCode(result2);
+} return mssgeFinal
+},
 };

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Cifra tu contraseña</title>
+</head>
+<body>
+    <p1>Cifra tu contraseña</p1>
+
+    <button class="home" onclick="window.location.href='index.html';">INICIO</button>;
+
+    <input id="number1" type="number" placeholder="NUMERO" min="1" max="100" maxlength="3">
+
+    <input id="cipher" type="submit" value="Cifrar">;
+    <input id="decipher" type="submit" value="Descifrar">;
+
+   <div class="box"><textarea id="box1" cols="44" rows="10" placeholder="Ingrese su texto aquí"></textarea></div>
+   <div class="box"><textarea id="box2" cols="44" rows="10" readonly></textarea></div>
+   
+<script src="cipher.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

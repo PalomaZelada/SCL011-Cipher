@@ -1,1 +1,93 @@
-/* Acá va tu código */
+body{
+    background-color: white;
+    font-family: sans-serif;
+}
+p1{
+    position: absolute;
+    background: #98BEEF;
+    width: 1349px;
+    height: 150px;
+    top: 0%;
+    font-size: 96px;
+    text-align: center;
+}
+.instructions {
+background: #C4C4C4;
+border-radius: 16px;
+position: absolute;
+width: 669px;
+height: 400px;
+left: 0;
+top: 180px;
+font-size: 30px;
+line-height: 37px;
+text-align: justify;
+}
+.start{
+position: absolute;
+left: 68%;
+top: 50%;
+height: 86px;
+width: 295px;
+font-size: 48px;
+border-radius: 15px;
+text-shadow: 4px;
+background-color: #D16262;
+}
+textarea{
+background-color: #C4C4C4;
+font-size: 24px;
+resize: none;
+}
+#box1{
+position: absolute;
+width: 600px;
+height: 298px;
+left: 10px;
+top: 190px;
+border-radius: 15px;
+}
+#box2{
+position: absolute;
+width: 600px;
+height: 298px;
+left: 700px;
+top: 190px;
+border-radius: 15px;   
+}
+.home{
+position: absolute;
+top:20px;
+right: 3%;
+height: 86px;
+width: 200px;
+font-size: 48px;
+border-radius: 25px;
+background-color: #D16262;
+}
+#cipher{
+position: absolute;
+top: 78%;
+left: 33%;
+height: 86px;
+width:200px;
+font-size:48px;
+border-radius: 25px;
+background-color: #D16262;
+}
+#number1{
+position: absolute;
+top: 155px;
+left: 39%;
+height: 24px;
+}
+#decipher{
+    position: absolute;
+    top: 78%;
+    left: 48%;
+    height: 86px;
+    width:200px;
+    font-size:48px;
+    border-radius: 25px;
+    background-color: #D16262;
+}
