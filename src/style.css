@@ -68,7 +68,7 @@ background-color: #D16262;
 #cipher{
 position: absolute;
 top: 78%;
-left: 33%;
+left: 24%;
 height: 86px;
 width:200px;
 font-size:48px;
@@ -84,7 +84,17 @@ height: 24px;
 #decipher{
     position: absolute;
     top: 78%;
-    left: 48%;
+    left: 39%;
+    height: 86px;
+    width:200px;
+    font-size:48px;
+    border-radius: 25px;
+    background-color: #D16262;
+}
+#copiar{
+    position: absolute;
+    top: 78%;
+    left: 54%;
     height: 86px;
     width:200px;
     font-size:48px;

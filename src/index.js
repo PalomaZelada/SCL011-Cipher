@@ -14,3 +14,14 @@ btnDecipher.addEventListener('click', () =>{
     let number=parseInt(document.getElementById("number1").value);
     document.getElementById("box2").innerHTML = cipher.decode(text,number);
 })
+
+//boton copiar texto
+const btnCopy = document.getElementById("copiar");
+btnCopy.addEventListener('click', () => {
+//llamar texto a copiar
+const copyText = document.getElementById("box2");
+let range= document.createRange();
+range.selectNodeContents(copyText);
+window.getSelection().addRange(range);
+let copy= document.execCommand("copy");
+})
