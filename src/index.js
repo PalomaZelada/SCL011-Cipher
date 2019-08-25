@@ -23,5 +23,5 @@ const copyText = document.getElementById("box2");
 let range= document.createRange();
 range.selectNodeContents(copyText);
 window.getSelection().addRange(range);
-let copy= document.execCommand("copy");
+//let copy= document.execCommand("copy");
 })
