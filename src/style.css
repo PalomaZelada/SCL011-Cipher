@@ -101,3 +101,13 @@ height: 24px;
     border-radius: 25px;
     background-color: #D16262;
 }
+#hacker{
+    position: absolute;
+    top: 87%;
+    right: 20px;
+    height: 86px;
+    width:86px;
+    font-size:48px;
+    border-radius: 25px;
+    background-color: #D16262;
+}

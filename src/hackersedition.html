@@ -1,0 +1,61 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<h1>Hackers Edition</h1>
+<body>
+        <input id="number1" type="number" placeholder="NUMERO" min="1" max="20" maxlength="2">
+        <input id="cipher" type="submit" value="Cifrar">;
+        <input id="decipher" type="submit" value="Descifrar">;
+        
+    
+       <div class="box"><textarea id="box1" cols="44" rows="10" replaceholder="Ingrese su texto aquí"></textarea></div>
+       <div class="box"><textarea id="box2" cols="44" rows="10" readonly></textarea></div>
+    <script>const btnOffset = document.getElementById("cipher");
+        console.log(btnOffset);
+        
+        btnOffset.addEventListener("click", () => {
+            let number= parseInt(document.getElementById("number1").value);
+            console.log(number);
+            let text= document.getElementById("box1").value;
+            console.log(text);
+            let mssgeFinal = "";
+            for(i=0; i<text.length; i++){
+                console.log(text[i]);
+                let asciiCode = text.charCodeAt(i);
+                let cipher = (asciiCode + number);
+                console.log(cipher);
+                mssgeFinal += String.fromCharCode(cipher);
+            }
+            document.getElementById("box2").innerHTML = mssgeFinal;
+        
+        });
+        
+        const btnDecipher = document.getElementById("decipher");
+        console.log(btnDecipher);
+        
+        btnDecipher.addEventListener("click", () => {
+            let number= parseInt(document.getElementById("number1").value);
+            console.log(number);
+            let text= document.getElementById("box1").value;
+            console.log(text);
+            let mssgeDecipher = "";
+            for(i=0; i<text.length; i++){
+                console.log(text[i]);
+                let asciiCode = text.charCodeAt(i);
+                let decipher = (asciiCode - number);
+                console.log(decipher);
+                mssgeDecipher += String.fromCharCode(decipher);
+            }
+            document.getElementById("box2").innerHTML = mssgeDecipher;
+        
+        });
+        </script>
+</body>
+</html>
